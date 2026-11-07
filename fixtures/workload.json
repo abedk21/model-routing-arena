@@ -1,0 +1,412 @@
+{
+  "models": [
+    {
+      "name": "SwiftLite",
+      "kinds": [
+        "chat",
+        "code",
+        "analysis"
+      ],
+      "high_risk_approved": false,
+      "cost_input_per_m": 0.13,
+      "cost_output_per_m": 0.42,
+      "base_latency_ms": 110,
+      "ms_per_output_token": 3.1,
+      "quality": {
+        "chat": 0.83,
+        "code": 0.53,
+        "analysis": 0.48
+      }
+    },
+    {
+      "name": "Builder",
+      "kinds": [
+        "chat",
+        "code",
+        "analysis"
+      ],
+      "high_risk_approved": false,
+      "cost_input_per_m": 0.7,
+      "cost_output_per_m": 1.5,
+      "base_latency_ms": 220,
+      "ms_per_output_token": 5.0,
+      "quality": {
+        "chat": 0.9,
+        "code": 0.81,
+        "analysis": 0.72
+      }
+    },
+    {
+      "name": "ReasonPro",
+      "kinds": [
+        "chat",
+        "code",
+        "analysis"
+      ],
+      "high_risk_approved": true,
+      "cost_input_per_m": 2.6,
+      "cost_output_per_m": 8.2,
+      "base_latency_ms": 450,
+      "ms_per_output_token": 10.5,
+      "quality": {
+        "chat": 0.96,
+        "code": 0.92,
+        "analysis": 0.94
+      }
+    },
+    {
+      "name": "Guardrail",
+      "kinds": [
+        "chat",
+        "analysis"
+      ],
+      "high_risk_approved": true,
+      "cost_input_per_m": 1.5,
+      "cost_output_per_m": 3.4,
+      "base_latency_ms": 280,
+      "ms_per_output_token": 7.0,
+      "quality": {
+        "chat": 0.91,
+        "analysis": 0.88
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "req-001",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.308,
+      "input_tokens": 407,
+      "output_tokens": 99
+    },
+    {
+      "id": "req-002",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.615,
+      "input_tokens": 464,
+      "output_tokens": 128
+    },
+    {
+      "id": "req-003",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.923,
+      "input_tokens": 521,
+      "output_tokens": 157
+    },
+    {
+      "id": "req-004",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.231,
+      "input_tokens": 578,
+      "output_tokens": 76
+    },
+    {
+      "id": "req-005",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.538,
+      "input_tokens": 635,
+      "output_tokens": 105
+    },
+    {
+      "id": "req-006",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.846,
+      "input_tokens": 692,
+      "output_tokens": 134
+    },
+    {
+      "id": "req-007",
+      "kind": "code",
+      "risk": "high",
+      "difficulty": 0.154,
+      "input_tokens": 359,
+      "output_tokens": 163
+    },
+    {
+      "id": "req-008",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.462,
+      "input_tokens": 416,
+      "output_tokens": 82
+    },
+    {
+      "id": "req-009",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.769,
+      "input_tokens": 473,
+      "output_tokens": 111
+    },
+    {
+      "id": "req-010",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.077,
+      "input_tokens": 530,
+      "output_tokens": 140
+    },
+    {
+      "id": "req-011",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.385,
+      "input_tokens": 587,
+      "output_tokens": 169
+    },
+    {
+      "id": "req-012",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.692,
+      "input_tokens": 644,
+      "output_tokens": 88
+    },
+    {
+      "id": "req-013",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.0,
+      "input_tokens": 701,
+      "output_tokens": 117
+    },
+    {
+      "id": "req-014",
+      "kind": "analysis",
+      "risk": "high",
+      "difficulty": 0.308,
+      "input_tokens": 368,
+      "output_tokens": 146
+    },
+    {
+      "id": "req-015",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.615,
+      "input_tokens": 425,
+      "output_tokens": 175
+    },
+    {
+      "id": "req-016",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.923,
+      "input_tokens": 482,
+      "output_tokens": 94
+    },
+    {
+      "id": "req-017",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.231,
+      "input_tokens": 539,
+      "output_tokens": 123
+    },
+    {
+      "id": "req-018",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.538,
+      "input_tokens": 596,
+      "output_tokens": 152
+    },
+    {
+      "id": "req-019",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.846,
+      "input_tokens": 653,
+      "output_tokens": 71
+    },
+    {
+      "id": "req-020",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.154,
+      "input_tokens": 710,
+      "output_tokens": 100
+    },
+    {
+      "id": "req-021",
+      "kind": "chat",
+      "risk": "high",
+      "difficulty": 0.462,
+      "input_tokens": 377,
+      "output_tokens": 129
+    },
+    {
+      "id": "req-022",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.769,
+      "input_tokens": 434,
+      "output_tokens": 158
+    },
+    {
+      "id": "req-023",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.077,
+      "input_tokens": 491,
+      "output_tokens": 77
+    },
+    {
+      "id": "req-024",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.385,
+      "input_tokens": 548,
+      "output_tokens": 106
+    },
+    {
+      "id": "req-025",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.692,
+      "input_tokens": 605,
+      "output_tokens": 135
+    },
+    {
+      "id": "req-026",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.0,
+      "input_tokens": 662,
+      "output_tokens": 164
+    },
+    {
+      "id": "req-027",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.308,
+      "input_tokens": 719,
+      "output_tokens": 83
+    },
+    {
+      "id": "req-028",
+      "kind": "analysis",
+      "risk": "high",
+      "difficulty": 0.615,
+      "input_tokens": 386,
+      "output_tokens": 112
+    },
+    {
+      "id": "req-029",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.923,
+      "input_tokens": 443,
+      "output_tokens": 141
+    },
+    {
+      "id": "req-030",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.231,
+      "input_tokens": 500,
+      "output_tokens": 170
+    },
+    {
+      "id": "req-031",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.538,
+      "input_tokens": 557,
+      "output_tokens": 89
+    },
+    {
+      "id": "req-032",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.846,
+      "input_tokens": 614,
+      "output_tokens": 118
+    },
+    {
+      "id": "req-033",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.154,
+      "input_tokens": 671,
+      "output_tokens": 147
+    },
+    {
+      "id": "req-034",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.462,
+      "input_tokens": 728,
+      "output_tokens": 176
+    },
+    {
+      "id": "req-035",
+      "kind": "code",
+      "risk": "high",
+      "difficulty": 0.769,
+      "input_tokens": 395,
+      "output_tokens": 95
+    },
+    {
+      "id": "req-036",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.077,
+      "input_tokens": 452,
+      "output_tokens": 124
+    },
+    {
+      "id": "req-037",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.385,
+      "input_tokens": 509,
+      "output_tokens": 153
+    },
+    {
+      "id": "req-038",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.692,
+      "input_tokens": 566,
+      "output_tokens": 72
+    },
+    {
+      "id": "req-039",
+      "kind": "chat",
+      "risk": "low",
+      "difficulty": 0.0,
+      "input_tokens": 623,
+      "output_tokens": 101
+    },
+    {
+      "id": "req-040",
+      "kind": "analysis",
+      "risk": "low",
+      "difficulty": 0.308,
+      "input_tokens": 680,
+      "output_tokens": 130
+    },
+    {
+      "id": "req-041",
+      "kind": "code",
+      "risk": "low",
+      "difficulty": 0.615,
+      "input_tokens": 737,
+      "output_tokens": 159
+    },
+    {
+      "id": "req-042",
+      "kind": "chat",
+      "risk": "high",
+      "difficulty": 0.923,
+      "input_tokens": 404,
+      "output_tokens": 78
+    }
+  ]
+}

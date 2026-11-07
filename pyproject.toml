@@ -1,0 +1,10 @@
+[project]
+name = "model-routing-arena"
+version = "0.1.0"
+description = "Deterministic provider-free routing benchmark for simulated LLMs"
+requires-python = ">=3.11"
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+packages = ["routing_arena"]
